@@ -1,0 +1,31 @@
+@keyframes animTitle{
+    0%{
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animSub{
+    0%{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes modalContainerAnimation{
+    0% {transform: scale(0.7);}
+    100% {transform: scale(1);}
+}
+
+@keyframes opacityAnimation{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

@@ -1,0 +1,75 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color-primary-dark, 0.9);
+    z-index: 200;
+    overflow: auto;
+    padding-top: 10rem;
+
+    animation: opacityAnimation .2s;
+
+    &__container{
+        max-width: 128rem;
+        position: relative;
+        margin: auto;
+        background-color: $color-primary-dark;
+
+        animation: modalContainerAnimation .3s;
+        
+    }
+
+    &__img{
+        width: 100%;
+        max-width: 128rem;
+        height: auto;
+        display: block;
+
+        animation: opacityAnimation .2s;
+        
+    }
+
+    &__img{
+        &-prev, &-next{
+            position: absolute;
+            top: 50%;
+            padding: 2rem;
+            font-size: 2rem;
+            text-align: center;
+            background-color: rgba($color-primary-dark, 0.7);
+            transform: translate(0, -50%);
+
+            animation: opacityAnimation .5s;
+
+            cursor: pointer;
+        }
+
+        &-prev{
+            left: 0;
+        }
+
+        &-next{
+            right: 0;
+        }
+    }
+
+    &__close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 1rem;
+        padding: 1.5rem;
+        cursor: pointer;
+        background-color: rgba($color-primary-dark, 0.7);
+        z-index: 50;
+    }
+
+    &__close-ico{
+        width: 1.85rem;
+        height: 1.85rem;
+        display: block;
+        fill: $color-font;
+    }
+}

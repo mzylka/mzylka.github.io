@@ -1,0 +1,17 @@
+.hero{
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &__title{
+        font-size: 12rem; 
+        animation: animTitle 1s;
+    }
+
+    &__subtitle{
+        font-size: 6rem; 
+        animation: animSub 1s;   
+    }
+}

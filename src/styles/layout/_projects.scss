@@ -1,0 +1,20 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+
+    @include respond(tab-land){
+        margin: 0 1rem
+    }
+
+    @include respond(phone){
+        margin: 0;
+    }
+
+    &__title-box{
+        text-align: center;
+        padding: 5rem 0;
+    }
+    &__title{
+        font-size: 8rem;
+    }
+}

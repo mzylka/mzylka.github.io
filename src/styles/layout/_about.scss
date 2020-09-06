@@ -1,0 +1,26 @@
+.about{
+    min-height: 50rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+
+    transition: all .6s ease-in;
+
+    &__title{
+        font-size: 8rem;
+    }
+
+    &__description{
+        font-size: 2.5rem;
+
+        @include respond(tab-land){
+            margin: 0 1rem;
+        }
+    }
+
+    &--is-visible{
+        opacity: 1;
+    }
+}

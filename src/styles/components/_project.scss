@@ -1,0 +1,116 @@
+.project{
+    display: flex;
+    background-color: $color-primary-dark;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.4);
+    border-radius: 2px;
+
+    transition: all .8s;
+    opacity: 0;
+
+    @include respond(phone){
+        flex-direction: column;
+    }
+    
+    &--left{
+        transform: translateX(-25%);
+    }
+
+    &--right{
+        transform: translateX(25%);
+    }
+
+    &__image-box{ 
+        :hover{
+            transition: box-shadow .2s ease-out;
+            box-shadow: 0px 0px 5px 2px rgba(255,255,255,0.7);
+        }
+    }
+
+    &__image{
+        display: block;
+        cursor: pointer;
+
+        @include respond(phone){
+            margin: auto;
+        }
+    }
+
+    &__text{
+        font-size: 1.75rem;
+        margin-left: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &--without-img{
+            margin-left: 0;
+            min-height: 25rem;
+        }
+
+        @include respond(phone){
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+
+    &__title{
+        font-size: 3rem;
+    }
+
+    &__links{
+        display: inline-block;
+
+        @include respond(tab-port){
+            flex-direction: column;
+            margin: 1rem 0;
+        }
+    }
+
+    &__link:link,
+    &__link:visited{
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        //background-image: linear-gradient(to bottom right, $color-primary, $color-primary-dark);
+        background-color: $color-primary;
+        padding: .5rem 1rem;
+        border-radius: 2px;
+
+        margin-right: 2rem;
+        transition: all .2s;
+
+        @include respond(phone){
+            margin-right: 0;
+        }
+
+        &:hover{
+            transform: translateY(-2px);
+            box-shadow: 0 1rem 1rem -2px rgba(0,0,0,0.4);
+        }
+
+        &:focus{
+            transform: translateY(-1px);
+            box-shadow: none;
+        }
+    }
+
+    &__git-ico{
+        display: inline-block;
+        width: 1.85rem;
+        height: 1.85rem;
+        fill: $color-font;
+    }
+    
+    &__git{
+        margin-left: 1rem;
+    }
+
+    &--is-visible{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

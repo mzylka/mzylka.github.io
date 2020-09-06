@@ -1,0 +1,13 @@
+.link{
+    
+    &__icon{
+        height: 5rem;
+        width: 5rem;
+        fill: $color-font;
+        transition: all .2s;
+
+        &:hover{
+            fill: $color-primary-light;
+        }
+    }
+}

@@ -24,7 +24,7 @@ const projectList = [
         description: "Projekt stworzony i rozwijany na potrzeby szlifowania języka JS. W grze tworzymy bohatera, który walczy z różnymi przeciwnikami. Walka odbywa się automatycznie, a o jej przebiegu informuje nas konsola. Jeśli bohater zginie, gracz musi przejść labirynt, aby go wskrzesić. Główną inspiracją była gra przeglądarkowa Shakes and Fidget",
         links: [{name: "Github", link:"https://github.com/mzylka/gamejs"}],
         imgSrc: "images/gamejs.jpg",
-        galery: ["images/gamejs-huge2.jpg", "images/gamejs-huge.jpg", "images/gamejs-huge3.jpg"]
+        galery: ["images/gamejs-huge2.jpg", "images/gamejs-huge.jpg", "images/gamejs-huge3.jpg", "images/gamejs-huge4.jpg"]
     },
     {
         id: 3,
